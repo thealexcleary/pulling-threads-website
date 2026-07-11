@@ -1,17 +1,108 @@
 ---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Ticker from '../components/Ticker.astro';
+import EpisodeCard from '../components/EpisodeCard.astro';
+import data from '../data/episodes.json';
 
+const [latest, ...rest] = data.episodes;
+const grid = rest.slice(0, 6);
+const count = data.episodes.length;
+const latestThumb = latest.youtubeId
+  ? `https://i.ytimg.com/vi/${latest.youtubeId}/hqdefault.jpg`
+  : data.showImage;
+const latestDate = new Date(latest.pubDate).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'PodcastSeries',
+  name: 'Pulling Threads',
+  url: 'https://pullingthreads.com.au',
+  description: 'Mostly talking shit, occasionally to great people...',
+  image: new URL('/images/hero.jpg', Astro.site).href,
+  webFeed: 'https://anchor.fm/s/f504ca18/podcast/rss',
+  sameAs: [
+    'https://open.spotify.com/show/1et4gYjb2968Hfcfm0TQdW',
+    'https://instagram.com/pullingthreads',
+    'https://www.youtube.com/@pullingthreadspodcast',
+  ],
+};
 ---
+<Base
+  heroNav
+  title="Pulling Threads — Australian podcast by Alex and Troy Cleary"
+  description="Mostly talking shit, occasionally to great people... A weekly Australian podcast from brothers Alex and Troy Cleary on life, training, money, mates and modern manhood."
+  jsonLd={jsonLd}
+>
+  <header class="hero" id="top">
+    <div class="hero-bg" role="img" aria-label="The Pulling Threads studio — two microphones facing each other"></div>
+    <Nav />
+    <div class="wrap hero-content">
+      <h1 class="hero-fade d1">Pulling Threads</h1>
+      <p class="hero-sub hero-fade d2">Alex and Troy Cleary on life, training, money, mates and modern manhood — <strong>no guru bullshit</strong>.</p>
+      <div class="hero-ctas hero-fade d3">
+        <a class="btn btn-primary" href="https://open.spotify.com/show/1et4gYjb2968Hfcfm0TQdW">Listen on Spotify</a>
+        <a class="btn btn-ghost" href="/episodes/">Browse all {count} episodes</a>
+      </div>
+    </div>
+  </header>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  <Ticker count={count} />
+
+  <section class="latest-sec" id="latest">
+    <div class="wrap latest">
+      <a class="vid" href={`/episodes/${latest.slug}/`} aria-label={`Play episode ${latest.number}`}>
+        <img src={latestThumb} alt={`${latest.title} — episode ${latest.number} thumbnail`} width="640" height="360" />
+        <span class="play"><span class="play-btn"><svg width="26" height="30" viewBox="0 0 26 30" fill="#fff" aria-hidden="true"><path d="M0 0 L26 15 L0 30 Z"/></svg></span></span>
+      </a>
+      <div class="latest-copy">
+        <span class="tag tag-red">Latest — Episode {latest.number}</span>
+        <h2>{latest.title}</h2>
+        <div class="meta"><span>{latestDate}</span><span>{latest.duration}</span></div>
+        <p>{latest.excerpt}</p>
+        <div class="latest-actions">
+          <a class="btn btn-primary btn-sm" href={`/episodes/${latest.slug}/`}>Play episode</a>
+          <a class="btn btn-ghost btn-sm" href={`/episodes/${latest.slug}/`}>Read show notes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="eps" id="episodes">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Every <em>episode</em></h2>
+      </div>
+      <p class="sec-sub">All {count} of them. Search for the one your mate wouldn't shut up about.</p>
+      <div class="ep-grid">
+        {grid.map((ep) => <EpisodeCard episode={ep} showImage={data.showImage} />)}
+      </div>
+      <div class="eps-more"><a class="btn btn-ghost" href="/episodes/">View all {count} episodes</a></div>
+    </div>
+  </section>
+
+  <section class="about-sec" id="about">
+    <div class="wrap about">
+      <div class="duo">
+        <figure><img src="/images/alex.jpg" alt="Alex Cleary" loading="lazy" width="640" height="853" /><figcaption>Alex</figcaption></figure>
+        <figure><img src="/images/troy.jpg" alt="Troy Cleary" loading="lazy" width="640" height="800" /><figcaption>Troy</figcaption></figure>
+      </div>
+      <div class="about-copy">
+        <h2>Two brothers <span class="accent">from Mount Isa</span></h2>
+        <p><strong>Alex</strong> is an electrician who works in underground mines in Africa, went from booze and chaos to 100km runs and cold showers, and once ran a marathon in Antarctica for the Black Dog Institute in memory of their sister.</p>
+        <p><strong>Troy</strong> is the reason the show is listenable. He's the one getting talked into ultramarathons against his better judgement, and he just beat Alex by 20 minutes in his first 50K. Alex would like that struck from the record.</p>
+        <p>Every week they sit down and pull at whatever thread life handed them &mdash; and follow it wherever it goes.</p>
+        <a class="btn btn-ghost" href="/about/" style="margin-top:10px">Read the full story</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="store" id="store">
+    <div class="wrap">
+      <span class="tag tag-line">Coming soon</span>
+      <h2>Merch is coming</h2>
+      <p>No products yet. We're working on it. Or at least talking about working on it, which is basically the same thing.</p>
+      <a class="btn btn-ghost" href="/store/" style="margin-top:26px">Get first dibs</a>
+    </div>
+  </section>
+</Base>
