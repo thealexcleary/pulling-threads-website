@@ -9,6 +9,10 @@ export function thumbnailUrl(episode, showImage) {
 export function matchUploads(episodes, uploads) {
   const byTitle = new Map(uploads.map(u => [normTitle(u.title), u.videoId]));
   for (const ep of episodes) {
-    if (!ep.youtubeId) ep.youtubeId = byTitle.get(normTitle(ep.title)) ?? null;
+    // The live channel feed is the source of truth: an exact title match
+    // replaces a stored id (covers deleted/re-uploaded videos).
+    const fresh = byTitle.get(normTitle(ep.title));
+    if (fresh) ep.youtubeId = fresh;
+    else if (!ep.youtubeId) ep.youtubeId = null;
   }
 }

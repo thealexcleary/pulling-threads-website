@@ -24,9 +24,14 @@ describe('matchUploads', () => {
     matchUploads(eps, uploads);
     expect(eps[0].youtubeId).toBe('zzz');
   });
-  it('never overwrites an existing id', () => {
-    const eps = [{ title: 'X', youtubeId: 'keep' }];
-    matchUploads(eps, [{ title: 'x', videoId: 'new' }]);
+  it('prefers the live feed on exact title match (stale re-upload ids)', () => {
+    const eps = [{ title: 'X', youtubeId: 'stale' }];
+    matchUploads(eps, [{ title: 'x', videoId: 'fresh' }]);
+    expect(eps[0].youtubeId).toBe('fresh');
+  });
+  it('keeps an existing id when the feed has no match', () => {
+    const eps = [{ title: 'Old Episode', youtubeId: 'keep' }];
+    matchUploads(eps, [{ title: 'unrelated short', videoId: 'v' }]);
     expect(eps[0].youtubeId).toBe('keep');
   });
   it('leaves unmatched episodes null', () => {
