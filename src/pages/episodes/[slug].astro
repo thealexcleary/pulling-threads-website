@@ -10,7 +10,7 @@ export function getStaticPaths() {
 }
 
 const { ep, prev, next } = Astro.props;
-const thumb = ep.youtubeId ? `https://i.ytimg.com/vi/${ep.youtubeId}/hqdefault.jpg` : data.showImage;
+const thumb = ep.thumbnailUrl ?? data.showImage;
 const date = new Date(ep.pubDate).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
 
 const jsonLd = {

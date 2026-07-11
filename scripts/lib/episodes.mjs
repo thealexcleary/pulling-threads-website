@@ -53,3 +53,16 @@ export function sanitizeHtml(html) {
     .replace(/\s+on[a-z]+\s*=\s*("[^"]*"|'[^']*'|[^\s>]+)/gi, '')
     .replace(/\s+(href|src)\s*=\s*("javascript:[^"]*"|'javascript:[^']*'|javascript:[^\s>]+)/gi, '');
 }
+
+
+// Convert a plain-text description (hook / bullets / timestamps blocks) to HTML.
+export function toHtml(text) {
+  const blocks = String(text).split(/\n\s*\n/).map(b => b.trim()).filter(Boolean);
+  return blocks.map(b => {
+    const lines = b.split('\n');
+    if (lines.every(l => l.startsWith('- '))) {
+      return '<ul>' + lines.map(l => `<li>${l.slice(2)}</li>`).join('') + '</ul>';
+    }
+    return '<p>' + lines.join('<br>') + '</p>';
+  }).join('');
+}

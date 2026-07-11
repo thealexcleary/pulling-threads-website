@@ -1,8 +1,6 @@
 ---
 const { episode, showImage } = Astro.props;
-const thumb = episode.youtubeId
-  ? `https://i.ytimg.com/vi/${episode.youtubeId}/hqdefault.jpg`
-  : showImage;
+const thumb = episode.thumbnailUrl ?? showImage;
 const date = new Date(episode.pubDate).toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' });
 ---
 <a class="ep-card" href={`/episodes/${episode.slug}/`}>

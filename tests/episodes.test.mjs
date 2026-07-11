@@ -78,3 +78,13 @@ describe('sanitizeHtml', async () => {
     expect(sanitizeHtml(clean)).toBe(clean);
   });
 });
+
+describe('toHtml (description overrides)', async () => {
+  const { toHtml } = await import('../scripts/lib/episodes.mjs');
+  it('converts hook + bullets + lines', () => {
+    const out = toHtml('Hook line one.\nHook line two.\n\nIn this episode:\n- First thing\n- Second thing\n\n(00:14) Start\n(05:30) Middle');
+    expect(out).toContain('<p>Hook line one.<br>Hook line two.</p>');
+    expect(out).toContain('<ul><li>First thing</li><li>Second thing</li></ul>');
+    expect(out).toContain('<p>(00:14) Start<br>(05:30) Middle</p>');
+  });
+});

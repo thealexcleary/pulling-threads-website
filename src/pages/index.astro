@@ -8,9 +8,7 @@ import data from '../data/episodes.json';
 const [latest, ...rest] = data.episodes;
 const grid = rest.slice(0, 6);
 const count = data.episodes.length;
-const latestThumb = latest.youtubeId
-  ? `https://i.ytimg.com/vi/${latest.youtubeId}/hqdefault.jpg`
-  : data.showImage;
+const latestThumb = latest.thumbnailUrl ?? data.showImage;
 const latestDate = new Date(latest.pubDate).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
 
 const jsonLd = {

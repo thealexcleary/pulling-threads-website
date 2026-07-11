@@ -1,6 +1,6 @@
 import { writeFileSync, readFileSync, existsSync } from 'node:fs';
 import { XMLParser } from 'fast-xml-parser';
-import { buildEpisodes } from './lib/episodes.mjs';
+import { buildEpisodes, toHtml } from './lib/episodes.mjs';
 import { matchUploads } from './lib/thumbnails.mjs';
 
 const CHANNEL_ID = 'UCDqSBnaFFUb9iviQff33AGw';
@@ -43,6 +43,7 @@ try {
     }
   } catch { /* uploads feed is enhancement only */ }
 
+  applyOverrides(data);
   writeFileSync(OUT, JSON.stringify(data, null, 1));
   console.log(`wrote ${data.episodes.length} episodes`);
 } catch (err) {
@@ -52,4 +53,28 @@ try {
     process.exit(0); // build continues on last-good data
   }
   throw err;
+}
+
+
+function applyOverrides(data) {
+  const overrides = existsSync('overrides/descriptions.json')
+    ? JSON.parse(readFileSync('overrides/descriptions.json', 'utf8')) : {};
+  let described = 0, localThumbs = 0;
+  for (const ep of data.episodes) {
+    const o = overrides[String(ep.number)];
+    if (o) {
+      ep.descriptionHtml = toHtml(o);
+      ep.excerpt = String(o).split(/\n/)[0].slice(0, 220);
+      described++;
+    }
+    if (existsSync(`public/images/episodes/${ep.number}.jpg`)) {
+      ep.thumbnailUrl = `/images/episodes/${ep.number}.jpg`;
+      localThumbs++;
+    } else if (ep.youtubeId) {
+      ep.thumbnailUrl = `https://i.ytimg.com/vi/${ep.youtubeId}/hqdefault.jpg`;
+    } else {
+      ep.thumbnailUrl = data.showImage;
+    }
+  }
+  console.log(`overrides: ${described} descriptions, ${localThumbs} local thumbnails`);
 }

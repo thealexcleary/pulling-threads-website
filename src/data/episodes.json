@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-07-11T05:04:35.793Z",
+ "fetchedAt": "2026-07-11T07:30:41.763Z",
  "showImage": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg",
  "episodes": [
   {
@@ -11,7 +11,8 @@
    "pubDate": "2026-07-05T23:58:22.000Z",
    "duration": "1 hr 38 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/122407271/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-6-5%2F427414467-44100-2-337cb9f13f587.mp3",
-   "youtubeId": "SmBajr67e6s"
+   "youtubeId": "SmBajr67e6s",
+   "thumbnailUrl": "https://i.ytimg.com/vi/SmBajr67e6s/hqdefault.jpg"
   },
   {
    "number": 82,
@@ -22,7 +23,8 @@
    "pubDate": "2026-06-28T19:00:00.000Z",
    "duration": "1 hr 7 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/122087731/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-5-28%2F426958535-44100-2-cd1350b0908e3.mp3",
-   "youtubeId": "Dzy5KJkncyQ"
+   "youtubeId": "Dzy5KJkncyQ",
+   "thumbnailUrl": "https://i.ytimg.com/vi/Dzy5KJkncyQ/hqdefault.jpg"
   },
   {
    "number": 81,
@@ -33,7 +35,8 @@
    "pubDate": "2026-06-21T19:00:00.000Z",
    "duration": "1 hr 11 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/121777313/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-5-21%2F426542769-44100-2-ba17077ec0d93.mp3",
-   "youtubeId": "tdMwA-PqXhw"
+   "youtubeId": "tdMwA-PqXhw",
+   "thumbnailUrl": "https://i.ytimg.com/vi/tdMwA-PqXhw/hqdefault.jpg"
   },
   {
    "number": 80,
@@ -44,7 +47,8 @@
    "pubDate": "2026-06-14T19:00:00.000Z",
    "duration": "1 hr 52 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/121453680/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-5-14%2F426109370-44100-2-f972ab70df32d.mp3",
-   "youtubeId": "q_Ajr9ihodE"
+   "youtubeId": "q_Ajr9ihodE",
+   "thumbnailUrl": "https://i.ytimg.com/vi/q_Ajr9ihodE/hqdefault.jpg"
   },
   {
    "number": 79,
@@ -55,7 +59,8 @@
    "pubDate": "2026-06-07T19:00:00.000Z",
    "duration": "1 hr 6 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/121113729/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-5-7%2F425655250-44100-2-68830de911dc6.mp3",
-   "youtubeId": "xt5r1O_HthA"
+   "youtubeId": "xt5r1O_HthA",
+   "thumbnailUrl": "https://i.ytimg.com/vi/xt5r1O_HthA/hqdefault.jpg"
   },
   {
    "number": 78,
@@ -66,7 +71,8 @@
    "pubDate": "2026-05-31T19:00:00.000Z",
    "duration": "1 hr 36 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/120787999/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-31%2F425219656-44100-2-88aec97627087.mp3",
-   "youtubeId": "wJmbA5Bqs2c"
+   "youtubeId": "wJmbA5Bqs2c",
+   "thumbnailUrl": "https://i.ytimg.com/vi/wJmbA5Bqs2c/hqdefault.jpg"
   },
   {
    "number": 77,
@@ -77,7 +83,8 @@
    "pubDate": "2026-05-24T19:00:00.000Z",
    "duration": "1 hr 26 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/120459904/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-24%2F424781835-44100-2-01191227d3cd9.mp3",
-   "youtubeId": "jkjUT6I9Jo4"
+   "youtubeId": "jkjUT6I9Jo4",
+   "thumbnailUrl": "https://i.ytimg.com/vi/jkjUT6I9Jo4/hqdefault.jpg"
   },
   {
    "number": 76,
@@ -88,7 +95,8 @@
    "pubDate": "2026-05-17T19:00:00.000Z",
    "duration": "1 hr 19 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/120108486/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-17%2F424313756-44100-2-2112ccf98cfe1.mp3",
-   "youtubeId": "tYTKKqczkzQ"
+   "youtubeId": "tYTKKqczkzQ",
+   "thumbnailUrl": "https://i.ytimg.com/vi/tYTKKqczkzQ/hqdefault.jpg"
   },
   {
    "number": 75,
@@ -99,7 +107,8 @@
    "pubDate": "2026-05-10T19:00:00.000Z",
    "duration": "1 hr 51 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/119719355/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-4-9%2F423793216-44100-2-31b6b1c2d05b2.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "/images/episodes/75.jpg"
   },
   {
    "number": 74,
@@ -110,7 +119,8 @@
    "pubDate": "2026-05-03T19:00:00.000Z",
    "duration": "1 hr 0 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/119219876/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-29%2F423108969-44100-2-c5bff006b363f.mp3",
-   "youtubeId": "E_gm5VWNKdA"
+   "youtubeId": "E_gm5VWNKdA",
+   "thumbnailUrl": "https://i.ytimg.com/vi/E_gm5VWNKdA/hqdefault.jpg"
   },
   {
    "number": 73,
@@ -121,7 +131,8 @@
    "pubDate": "2026-04-26T19:00:00.000Z",
    "duration": "1 hr 30 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/119053967/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-26%2F422883004-44100-2-d222470a06392.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 72,
@@ -132,7 +143,8 @@
    "pubDate": "2026-04-19T19:00:00.000Z",
    "duration": "2 hr 8 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/118680382/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-19%2F422371165-44100-2-27e116f7206b3.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 71,
@@ -143,7 +155,8 @@
    "pubDate": "2026-04-12T19:00:00.000Z",
    "duration": "1 hr 25 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/118314245/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-12%2F421883569-44100-2-26e33ed544e8c.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 70,
@@ -154,7 +167,8 @@
    "pubDate": "2026-04-05T19:00:00.000Z",
    "duration": "1 hr 7 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/117976618/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-3-5%2F421434906-44100-2-d7ea965038558.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 69,
@@ -165,7 +179,8 @@
    "pubDate": "2026-03-29T18:00:00.000Z",
    "duration": "1 hr 41 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/117614869/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-28%2F420955019-44100-2-838d97f3759e1.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 68,
@@ -176,7 +191,8 @@
    "pubDate": "2026-03-22T18:00:00.000Z",
    "duration": "1 hr 15 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/117280932/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-21%2F420505689-44100-2-ea4deae78d499.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 67,
@@ -187,7 +203,8 @@
    "pubDate": "2026-03-15T18:00:00.000Z",
    "duration": "1 hr 31 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/116945341/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-15%2F420047015-44100-2-3ae3a9ae8c934.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 66,
@@ -198,7 +215,8 @@
    "pubDate": "2026-03-08T18:00:00.000Z",
    "duration": "2 hr 2 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/116531690/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-2-7%2F419483878-44100-2-cb66b4295e2d5.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 65,
@@ -209,7 +227,8 @@
    "pubDate": "2026-03-01T18:00:00.000Z",
    "duration": "1 hr 5 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/116115360/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-1-27%2F418920477-44100-2-cfc0eb197c41a.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 64,
@@ -220,7 +239,8 @@
    "pubDate": "2026-02-22T18:00:00.000Z",
    "duration": "1 hr 16 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/115332307/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-1-11%2F417926544-44100-2-da79d482f4f4.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 63,
@@ -231,7 +251,8 @@
    "pubDate": "2026-02-15T18:00:00.000Z",
    "duration": "48 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/115334001/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-1-11%2F417929924-44100-2-7191310c2bffb.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 62,
@@ -242,7 +263,8 @@
    "pubDate": "2026-02-08T18:00:00.000Z",
    "duration": "2 hr 15 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/114656484/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-0-27%2F416971581-44100-2-f3ef8475e9675.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 61,
@@ -253,7 +275,8 @@
    "pubDate": "2026-02-01T18:00:00.000Z",
    "duration": "1 hr 56 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/114650502/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-0-27%2F416963419-44100-2-5eb3fb6efc366.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 60,
@@ -264,7 +287,8 @@
    "pubDate": "2026-01-25T18:05:00.000Z",
    "duration": "1 hr 6 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/114425724/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-0-23%2F416669749-44100-2-39feb11f2848a.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 59,
@@ -275,7 +299,8 @@
    "pubDate": "2026-01-11T18:00:00.000Z",
    "duration": "1 hr 33 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/113720180/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2026-0-9%2F415770373-44100-2-a37948d91db1f.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 58,
@@ -286,7 +311,8 @@
    "pubDate": "2025-10-13T21:00:00.000Z",
    "duration": "1 hr 42 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/109591615/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-9-13%2F409158498-44100-2-254022ab765c9.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 57,
@@ -297,7 +323,8 @@
    "pubDate": "2025-10-05T23:53:02.000Z",
    "duration": "37 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/109255222/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-9-5%2F408718065-44100-2-1ad229f65aea1.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 56,
@@ -308,7 +335,8 @@
    "pubDate": "2025-09-30T21:44:19.000Z",
    "duration": "25 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/109036912/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-8-30%2F408435575-44100-2-6468f740896f2.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 55,
@@ -319,7 +347,8 @@
    "pubDate": "2025-09-22T05:00:00.000Z",
    "duration": "45 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/108567644/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-8-20%2F407827799-44100-2-b7a3ad408fc5f.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 54,
@@ -330,7 +359,8 @@
    "pubDate": "2025-09-15T09:10:16.000Z",
    "duration": "22 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/108316181/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-8-15%2F407553193-44100-2-54ece1763f968.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 53,
@@ -341,7 +371,8 @@
    "pubDate": "2025-09-08T20:03:00.000Z",
    "duration": "1 hr 17 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/107793175/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-8-8%2F407105132-44100-2-5c47356cfe73.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 52,
@@ -352,7 +383,8 @@
    "pubDate": "2025-09-01T06:00:00.000Z",
    "duration": "1 hr 26 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/107595974/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-7-31%2F406600143-44100-2-19bd0894346eb.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 51,
@@ -363,7 +395,8 @@
    "pubDate": "2025-08-25T06:00:00.000Z",
    "duration": "1 hr 2 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/107199804/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-7-24%2F406183733-44100-2-27de942e1679f.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 50,
@@ -374,7 +407,8 @@
    "pubDate": "2025-08-20T20:41:06.000Z",
    "duration": "6 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/107129656/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-7-20%2F144edb4c-6377-f99d-90f2-5b3dc3e80093.m4a",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 49,
@@ -385,7 +419,8 @@
    "pubDate": "2025-08-18T06:04:00.000Z",
    "duration": "2 hr 1 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/106888684/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-7-15%2F405694870-44100-2-b3dc1fa2700f5.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 48,
@@ -396,7 +431,8 @@
    "pubDate": "2025-08-11T06:00:00.000Z",
    "duration": "39 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/106589589/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-7-8%2F405309720-44100-2-011389b47d0b1.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 47,
@@ -407,7 +443,8 @@
    "pubDate": "2025-08-05T08:49:41.000Z",
    "duration": "1 hr 14 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/106448448/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-7-5%2F405138244-44100-2-0e66ae844f087.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 46,
@@ -418,7 +455,8 @@
    "pubDate": "2025-07-28T07:00:01.000Z",
    "duration": "1 hr 3 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/106082599/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-6-28%2F404659339-44100-2-a49c13eb06c27.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 45,
@@ -429,7 +467,8 @@
    "pubDate": "2025-07-22T18:55:17.000Z",
    "duration": "1 hr 34 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/105823639/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-6-22%2F404334461-44100-2-152f0a81efd9f.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 44,
@@ -440,7 +479,8 @@
    "pubDate": "2025-07-14T10:11:19.000Z",
    "duration": "33 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/105469939/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-6-14%2F403875500-44100-2-4a0165440df66.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 43,
@@ -451,7 +491,8 @@
    "pubDate": "2025-07-07T07:53:29.000Z",
    "duration": "28 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/105132890/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-6-7%2F403440542-44100-2-b7d59cc934dc8.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 42,
@@ -462,7 +503,8 @@
    "pubDate": "2025-06-30T06:24:19.000Z",
    "duration": "28 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/104817484/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-5-30%2F403037063-44100-2-c25a009b1ec2c.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 41,
@@ -473,7 +515,8 @@
    "pubDate": "2025-06-24T02:51:10.000Z",
    "duration": "17 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/104553551/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-5-24%2F402700061-44100-2-fa605d42cd14c.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 40,
@@ -484,7 +527,8 @@
    "pubDate": "2025-06-16T21:34:29.000Z",
    "duration": "22 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/104226771/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-5-16%2F402283708-44100-2-2b2c9752a31a1.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 39,
@@ -495,7 +539,8 @@
    "pubDate": "2025-06-09T07:00:00.000Z",
    "duration": "34 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/103748958/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-5-6%2F401689075-44100-2-5c110c0f8c3b6.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 38,
@@ -506,7 +551,8 @@
    "pubDate": "2025-06-03T10:31:33.000Z",
    "duration": "31 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/103590140/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-5-3%2F401484412-44100-2-f05465adc8d5c.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 37,
@@ -517,7 +563,8 @@
    "pubDate": "2025-05-27T07:22:39.000Z",
    "duration": "36 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/103255821/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-4-28%2F401144198-44100-2-c2874c2eb7e97.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 36,
@@ -528,7 +575,8 @@
    "pubDate": "2025-05-19T07:10:48.000Z",
    "duration": "32 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/102823073/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-4-19%2F400550431-44100-2-f74a8633346cd.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 35,
@@ -539,7 +587,8 @@
    "pubDate": "2025-05-12T07:00:00.000Z",
    "duration": "27 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/102488002/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-4-11%2F400023002-44100-2-a345ea24b3aa5.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 34,
@@ -550,7 +599,8 @@
    "pubDate": "2025-05-05T07:00:00.000Z",
    "duration": "29 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/102147201/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-4-4%2F399561414-44100-2-2a366ccb9bfbf.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 33,
@@ -561,7 +611,8 @@
    "pubDate": "2025-04-28T09:20:30.000Z",
    "duration": "39 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/101871492/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-3-28%2F399205930-44100-2-b44dc49c68763.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 32,
@@ -572,7 +623,8 @@
    "pubDate": "2025-04-21T08:58:03.000Z",
    "duration": "31 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/101559455/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-3-21%2F398739883-44100-2-3758d1ce07859.m4a",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 31,
@@ -583,7 +635,8 @@
    "pubDate": "2025-04-14T08:38:12.000Z",
    "duration": "45 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/101261445/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-3-14%2F398361029-44100-2-c6c57f93c579b.m4a",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 30,
@@ -594,7 +647,8 @@
    "pubDate": "2025-04-07T07:00:00.000Z",
    "duration": "1 hr 4 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/100889057/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-3-6%2F397895850-44100-2-067eed4eab31d.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 29,
@@ -605,7 +659,8 @@
    "pubDate": "2025-03-31T06:00:00.000Z",
    "duration": "29 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/100571820/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-2-30%2F397487770-44100-2-11b7e8a6960ab.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 28,
@@ -616,7 +671,8 @@
    "pubDate": "2025-03-24T07:33:02.000Z",
    "duration": "25 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/100283113/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-2-24%2F397120788-44100-2-b2f3a350a6879.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 27,
@@ -627,7 +683,8 @@
    "pubDate": "2025-03-17T06:00:00.000Z",
    "duration": "29 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/99921876/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-2-16%2F396661665-44100-2-32b1fcc01c7da.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 26,
@@ -638,7 +695,8 @@
    "pubDate": "2025-03-10T06:00:00.000Z",
    "duration": "33 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/99545943/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-2-8%2F396191725-44100-2-6fca89fddac33.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 25,
@@ -649,7 +707,8 @@
    "pubDate": "2025-03-03T06:01:00.000Z",
    "duration": "29 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/99242037/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-2-2%2F395808207-44100-2-dbb5e89b18cda.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 24,
@@ -660,7 +719,8 @@
    "pubDate": "2025-02-24T06:00:00.000Z",
    "duration": "24 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/98891234/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-1-23%2F395371802-44100-2-c05bc01605aa6.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 23,
@@ -671,7 +731,8 @@
    "pubDate": "2025-02-16T08:38:44.000Z",
    "duration": "19 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/98562534/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-1-16%2F394958913-44100-2-b45a1326a005.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 22,
@@ -682,7 +743,8 @@
    "pubDate": "2025-02-10T04:53:47.000Z",
    "duration": "35 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/98231863/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-1-9%2F394550404-44100-2-a1c8eb7c4a985.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 21,
@@ -693,7 +755,8 @@
    "pubDate": "2025-02-02T19:00:00.000Z",
    "duration": "34 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/97855871/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2025-1-1%2F394084691-44100-2-49011319bb193.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 20,
@@ -704,7 +767,8 @@
    "pubDate": "2024-12-15T19:00:00.000Z",
    "duration": "32 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/95847088/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-15%2F391590543-44100-2-1f365ba9b48b1.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 19,
@@ -715,7 +779,8 @@
    "pubDate": "2024-12-08T19:00:00.000Z",
    "duration": "13 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/95524748/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-8%2F391182454-44100-2-e7058233712d9.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 18,
@@ -726,7 +791,8 @@
    "pubDate": "2024-12-03T18:00:00.000Z",
    "duration": "24 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/95284724/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-11-3%2F390895338-44100-2-ccf796468ba3b.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 17,
@@ -737,7 +803,8 @@
    "pubDate": "2024-11-25T02:47:49.000Z",
    "duration": "34 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/94901360/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-10-25%2F390415789-44100-2-b0286a8cf537b.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 16,
@@ -748,7 +815,8 @@
    "pubDate": "2024-11-17T19:00:00.000Z",
    "duration": "24 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/94536659/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-10-17%2F389960397-44100-2-0c2326915b3b2.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 15,
@@ -759,7 +827,8 @@
    "pubDate": "2024-11-10T19:00:00.000Z",
    "duration": "16 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/94211254/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-10-10%2F389555007-44100-2-8e21cc395ca1d.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 14,
@@ -770,7 +839,8 @@
    "pubDate": "2024-11-03T19:07:00.000Z",
    "duration": "18 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/93897189/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-10-3%2F389163880-44100-2-1fb918b1b42a.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 13,
@@ -781,7 +851,8 @@
    "pubDate": "2024-10-27T19:00:00.000Z",
    "duration": "38 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/93587435/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-9-27%2F388781155-44100-2-1a908e59aa138.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 12,
@@ -792,7 +863,8 @@
    "pubDate": "2024-10-20T19:00:00.000Z",
    "duration": "22 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/93210484/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-9-18%2F388311929-44100-2-3f9900f1f700f.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 11,
@@ -803,7 +875,8 @@
    "pubDate": "2024-10-13T19:00:00.000Z",
    "duration": "1 hr 21 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/92920896/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-9-12%2F387968764-44100-2-770d784e64ee3.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 10,
@@ -814,7 +887,8 @@
    "pubDate": "2024-10-06T19:00:00.000Z",
    "duration": "2 hr 0 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/92563777/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-9-4%2F387535109-44100-2-28643b3e51bc4.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 9,
@@ -825,7 +899,8 @@
    "pubDate": "2024-08-25T20:00:00.000Z",
    "duration": "1 hr 29 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/90463964/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-7-15%2F384832697-44100-2-eb49c9bfeb.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 8,
@@ -836,7 +911,8 @@
    "pubDate": "2024-08-11T20:00:00.000Z",
    "duration": "1 hr 52 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/90271963/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-7-10%2F384588344-44100-2-9de2980e8b793.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 7,
@@ -847,7 +923,8 @@
    "pubDate": "2024-07-28T20:00:00.000Z",
    "duration": "1 hr 36 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/89605180/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-6-25%2F383796961-44100-2-96f60f9927dc6.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 6,
@@ -858,7 +935,8 @@
    "pubDate": "2024-07-14T20:00:00.000Z",
    "duration": "1 hr 41 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/89006843/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-6-10%2F382918387-44100-2-34f8537699dbf.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 5,
@@ -869,7 +947,8 @@
    "pubDate": "2024-06-30T20:00:00.000Z",
    "duration": "1 hr 55 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/88632189/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-5-30%2F382045764-44100-2-c6d2efd36c943.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 4,
@@ -880,7 +959,8 @@
    "pubDate": "2024-06-16T20:00:00.000Z",
    "duration": "2 hr 35 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/87769011/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-5-8%2F380118890-44100-2-82eca4f35add7.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 3,
@@ -891,7 +971,8 @@
    "pubDate": "2024-06-02T20:00:00.000Z",
    "duration": "1 hr 34 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/87439367/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-4-31%2F379370819-44100-2-a0b2cddbe2e37.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 2,
@@ -902,7 +983,8 @@
    "pubDate": "2024-05-19T20:00:00.000Z",
    "duration": "2 hr 3 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/86894359/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-4-18%2F378032368-44100-2-6a624a3fd029a.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   },
   {
    "number": 1,
@@ -913,7 +995,8 @@
    "pubDate": "2024-05-05T19:45:10.000Z",
    "duration": "1 hr 27 min",
    "audioUrl": "https://anchor.fm/s/f504ca18/podcast/play/86294799/https%3A%2F%2Fd3ctxlq1ktw2nl.cloudfront.net%2Fstaging%2F2024-4-4%2F376566267-44100-2-0624004957206.mp3",
-   "youtubeId": null
+   "youtubeId": null,
+   "thumbnailUrl": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41007318/41007318-1713382154309-c5477143ecd9d.jpg"
   }
  ]
 }
