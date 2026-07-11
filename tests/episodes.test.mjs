@@ -84,6 +84,7 @@ describe('toHtml (description overrides)', async () => {
   it('converts hook + bullets + lines', () => {
     const out = toHtml('Hook line one.\nHook line two.\n\nIn this episode:\n- First thing\n- Second thing\n\n(00:14) Start\n(05:30) Middle');
     expect(out).toContain('<p>Hook line one.<br>Hook line two.</p>');
+    expect(out).toContain('<p>In this episode:</p>');
     expect(out).toContain('<ul><li>First thing</li><li>Second thing</li></ul>');
     expect(out).toContain('<p>(00:14) Start<br>(05:30) Middle</p>');
   });

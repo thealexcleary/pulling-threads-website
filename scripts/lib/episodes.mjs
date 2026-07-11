@@ -60,9 +60,15 @@ export function toHtml(text) {
   const blocks = String(text).split(/\n\s*\n/).map(b => b.trim()).filter(Boolean);
   return blocks.map(b => {
     const lines = b.split('\n');
-    if (lines.every(l => l.startsWith('- '))) {
-      return '<ul>' + lines.map(l => `<li>${l.slice(2)}</li>`).join('') + '</ul>';
+    const out = [];
+    let bullets = [], para = [];
+    const flushPara = () => { if (para.length) { out.push('<p>' + para.join('<br>') + '</p>'); para = []; } };
+    const flushBullets = () => { if (bullets.length) { out.push('<ul>' + bullets.map(l => `<li>${l}</li>`).join('') + '</ul>'); bullets = []; } };
+    for (const line of lines) {
+      if (line.startsWith('- ')) { flushPara(); bullets.push(line.slice(2)); }
+      else { flushBullets(); para.push(line); }
     }
-    return '<p>' + lines.join('<br>') + '</p>';
+    flushPara(); flushBullets();
+    return out.join('');
   }).join('');
 }
