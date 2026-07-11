@@ -1,0 +1,16 @@
+---
+const { count = 83 } = Astro.props;
+const items = [
+  'New episode every week',
+  `<b>${count}</b> episodes and counting`,
+  'Mostly talking shit',
+  'Occasionally to great people',
+  'Dog act of the week',
+  'Harry of the week',
+];
+---
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    {[...items, ...items].map((t) => <span set:html={t} />)}
+  </div>
+</div>

@@ -1,0 +1,14 @@
+---
+const { solid = false } = Astro.props;
+---
+<nav class={solid ? 'nav nav--solid' : 'nav'}>
+  <div class="wrap nav-inner">
+    <a class="nav-logo" href="/" aria-label="Pulling Threads home"><img src="/images/badge.png" alt="Pulling Threads" width="64" height="64" /></a>
+    <div class="nav-links">
+      <a href="/episodes/">Episodes</a>
+      <a href="/about/">About</a>
+      <a href="/store/">Store</a>
+      <a class="btn btn-ghost btn-sm" href="https://open.spotify.com/show/1et4gYjb2968Hfcfm0TQdW">Listen on Spotify</a>
+    </div>
+  </div>
+</nav>

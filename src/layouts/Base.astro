@@ -1,0 +1,20 @@
+---
+import '../styles/global.css';
+import Seo from '../components/Seo.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+const { title, description, image, jsonLd, heroNav = false } = Astro.props;
+---
+<html lang="en-au">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/images/badge.png" />
+    <Seo {title} {description} {image} {jsonLd} />
+  </head>
+  <body>
+    {!heroNav && <Nav solid />}
+    <slot />
+    <Footer />
+  </body>
+</html>

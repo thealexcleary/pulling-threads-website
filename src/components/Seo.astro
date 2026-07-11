@@ -1,0 +1,16 @@
+---
+const { title, description, image = '/images/hero.jpg', jsonLd } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const img = new URL(image, Astro.site);
+---
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Pulling Threads" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={img} />
+<meta name="twitter:card" content="summary_large_image" />
+{jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
