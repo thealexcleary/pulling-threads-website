@@ -161,3 +161,13 @@ footer { padding:72px 0 40px; border-top:1px solid var(--border); background:#00
 /* nav variant for pages without a hero */
 .nav--solid { position:sticky; top:0; background:rgba(0,0,0,.85); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-bottom:1px solid var(--border); }
 .nav--solid .nav-inner { padding-bottom:14px; }
+
+/* ---------- episode detail ---------- */
+.episode { padding:140px 0 80px; max-width:760px; }
+.episode .ep-top { display:flex; gap:12px; font:700 11px/1.2 var(--body); letter-spacing:.08em; text-transform:uppercase; margin:0 0 14px; }
+.episode h1 { font:400 clamp(34px,5vw,54px)/1.05 var(--heading); text-transform:uppercase; letter-spacing:.02em; margin:0 0 24px; text-wrap:balance; }
+.episode .notes { color:var(--text-2); margin-top:28px; }
+.episode .notes p { margin:0 0 16px; }
+.prevnext { display:flex; justify-content:space-between; gap:24px; margin-top:48px; padding-top:24px; border-top:1px solid var(--border); font:600 13px/1.4 var(--body); text-transform:uppercase; letter-spacing:.05em; }
+.prevnext a { color:var(--text-2); max-width:44%; }
+.prevnext a:hover { color:var(--text); }

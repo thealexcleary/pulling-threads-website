@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import EpisodeCard from '../../components/EpisodeCard.astro';
+import data from '../../data/episodes.json';
+const count = data.episodes.length;
+---
+<Base
+  title={`Every episode — Pulling Threads`}
+  description={`All ${count} episodes of the Pulling Threads podcast by Alex and Troy Cleary. Search the archive and start listening.`}
+>
+  <section class="eps" style="padding-top:140px">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Every <em>episode</em></h2>
+      </div>
+      <p class="sec-sub">All {count} of them. Search for the one your mate wouldn't shut up about.</p>
+      <div class="ep-tools">
+        <label class="search">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5.5" stroke="#6E6E6E"/><path d="M11 11 L15 15" stroke="#6E6E6E" stroke-linecap="round"/></svg>
+          <input type="search" id="q" placeholder="Search episodes — try &quot;deck&quot;, &quot;ultra&quot; or &quot;Tim&quot;" aria-label="Search episodes" />
+        </label>
+      </div>
+      <div class="ep-grid" id="grid">
+        {data.episodes.map((ep) => (
+          <div class="ep-cell" data-search={`${ep.title.toLowerCase()} ${ep.excerpt.toLowerCase()} ep${ep.number} ep ${ep.number}`}>
+            <EpisodeCard episode={ep} showImage={data.showImage} />
+          </div>
+        ))}
+      </div>
+      <p class="sec-sub" id="none" hidden style="margin-top:32px">Nothing matches that. Try fewer words.</p>
+    </div>
+  </section>
+
+  <script>
+    const q = document.getElementById('q') as HTMLInputElement;
+    const cells = [...document.querySelectorAll<HTMLElement>('.ep-cell')];
+    const none = document.getElementById('none')!;
+    q.addEventListener('input', () => {
+      const needle = q.value.toLowerCase().trim();
+      let shown = 0;
+      for (const c of cells) {
+        const hit = !needle || (c.dataset.search ?? '').includes(needle);
+        c.style.display = hit ? '' : 'none';
+        if (hit) shown++;
+      }
+      none.hidden = shown > 0;
+    });
+  </script>
+</Base>

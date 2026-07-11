@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import data from '../../data/episodes.json';
+
+export function getStaticPaths() {
+  return data.episodes.map((ep, i) => ({
+    params: { slug: ep.slug },
+    props: { ep, prev: data.episodes[i + 1] ?? null, next: data.episodes[i - 1] ?? null },
+  }));
+}
+
+const { ep, prev, next } = Astro.props;
+const thumb = ep.youtubeId ? `https://i.ytimg.com/vi/${ep.youtubeId}/hqdefault.jpg` : data.showImage;
+const date = new Date(ep.pubDate).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'PodcastEpisode',
+  name: ep.title,
+  url: new URL(`/episodes/${ep.slug}/`, Astro.site).href,
+  episodeNumber: ep.number,
+  datePublished: ep.pubDate,
+  timeRequired: ep.duration,
+  description: ep.excerpt,
+  associatedMedia: { '@type': 'MediaObject', contentUrl: ep.audioUrl },
+  partOfSeries: { '@type': 'PodcastSeries', name: 'Pulling Threads', url: 'https://pullingthreads.com.au' },
+  image: thumb,
+};
+---
+<Base title={`${ep.title} — Pulling Threads EP ${ep.number}`} description={ep.excerpt} image={thumb} jsonLd={jsonLd}>
+  <article class="wrap episode">
+    <p class="ep-top"><span class="ep-num">EP {ep.number}</span><span class="ep-date">{date}</span><span class="ep-date">{ep.duration}</span></p>
+    <h1>{ep.title}</h1>
+    <iframe
+      title="Spotify player"
+      style="border-radius:12px"
+      src="https://open.spotify.com/embed/show/1et4gYjb2968Hfcfm0TQdW"
+      width="100%" height="152" frameborder="0" loading="lazy"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    {ep.youtubeId && (
+      <p style="margin-top:16px"><a class="btn btn-ghost btn-sm" href={`https://www.youtube.com/watch?v=${ep.youtubeId}`}>Watch on YouTube</a></p>
+    )}
+    <div class="notes" set:html={ep.descriptionHtml} />
+    <nav class="prevnext" aria-label="Episode navigation">
+      {prev ? <a href={`/episodes/${prev.slug}/`}>&larr; EP {prev.number}: {prev.title}</a> : <span />}
+      {next ? <a href={`/episodes/${next.slug}/`}>EP {next.number}: {next.title} &rarr;</a> : <span />}
+    </nav>
+  </article>
+</Base>
