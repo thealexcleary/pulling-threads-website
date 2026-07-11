@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pullingthreads.com.au/sitemap-index.xml

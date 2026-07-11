@@ -60,3 +60,21 @@ describe('buildEpisodes', () => {
     expect(eps[0].slug).not.toBe(eps[1].slug);
   });
 });
+
+describe('sanitizeHtml', async () => {
+  const { sanitizeHtml } = await import('../scripts/lib/episodes.mjs');
+  it('strips script tags and their content', () => {
+    expect(sanitizeHtml('<p>hi</p><script>alert(1)</script>')).toBe('<p>hi</p>');
+  });
+  it('strips iframes, objects and embeds', () => {
+    expect(sanitizeHtml('<iframe src="x"></iframe><p>ok</p><embed src="y">')).toBe('<p>ok</p>');
+  });
+  it('strips on* event handlers and javascript: urls', () => {
+    expect(sanitizeHtml('<p onclick="evil()">hi</p>')).toBe('<p>hi</p>');
+    expect(sanitizeHtml('<a href="javascript:evil()">x</a>')).toBe('<a>x</a>');
+  });
+  it('keeps normal formatting', () => {
+    const clean = '<p>Timestamps:<br>(00:14) Welcome back</p><ul><li>a</li></ul>';
+    expect(sanitizeHtml(clean)).toBe(clean);
+  });
+});

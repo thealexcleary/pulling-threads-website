@@ -29,7 +29,7 @@ export function buildEpisodes(items, totalCount) {
     const n = (seen.get(slug) || 0) + 1;
     seen.set(slug, n);
     if (n > 1) slug = `${slug}-${n}`;
-    const descriptionHtml = String(item['content:encoded'] ?? item.description ?? '');
+    const descriptionHtml = sanitizeHtml(String(item['content:encoded'] ?? item.description ?? ''));
     return {
       number: totalCount - i,
       slug,
@@ -42,4 +42,14 @@ export function buildEpisodes(items, totalCount) {
       youtubeId: null,
     };
   });
+}
+
+// Strip anything executable from feed HTML before it is rendered with set:html.
+// The feed is Alex's own, but if it were ever compromised the site must not execute it.
+export function sanitizeHtml(html) {
+  return String(html)
+    .replace(/<(script|style|iframe|object|embed|form)\b[\s\S]*?<\/\1>/gi, '')
+    .replace(/<(script|style|iframe|object|embed|form|link|meta)\b[^>]*\/?>/gi, '')
+    .replace(/\s+on[a-z]+\s*=\s*("[^"]*"|'[^']*'|[^\s>]+)/gi, '')
+    .replace(/\s+(href|src)\s*=\s*("javascript:[^"]*"|'javascript:[^']*'|javascript:[^\s>]+)/gi, '');
 }
