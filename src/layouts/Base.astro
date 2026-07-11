@@ -11,7 +11,8 @@ const { title, description, image, jsonLd, heroNav = false } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https://i.ytimg.com https://*.cloudfront.net data:; font-src 'self'; frame-src https://open.spotify.com; connect-src 'self' https://script.google.com https://*.googleusercontent.com; form-action 'self' https://script.google.com; base-uri 'self'; object-src 'none'" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <link rel="icon" href="/images/badge.png" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <Seo {title} {description} {image} {jsonLd} />
   </head>
   <body>

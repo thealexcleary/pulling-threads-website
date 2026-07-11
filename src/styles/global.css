@@ -150,7 +150,6 @@ footer { padding:72px 0 40px; border-top:1px solid var(--border); background:#00
   .hero-bg { background-position:68% bottom; }
   .hero-content { padding:100px 0 48px; }
   .hero-sub { font-size:16px; }
-  .hero-ctas .btn { width:100%; }
   section { padding:64px 0; }
   .latest-sec, .about-sec { padding:64px 0; }
   .store { padding:88px 0; }
@@ -180,3 +179,9 @@ footer { padding:72px 0 40px; border-top:1px solid var(--border); background:#00
 .prose a { color:var(--text); text-decoration:underline; text-underline-offset:3px; }
 .prose ul { padding-left:20px; margin:0 0 16px; }
 .store-copy p { color:var(--text-2); max-width:44ch; margin:0 auto 8px; }
+
+
+/* about page: photos ride along beside the long copy */
+.about--page { align-items:start; }
+.about--page .duo { position:sticky; top:110px; }
+@media (max-width:919px) { .about--page .duo { position:static; } }
