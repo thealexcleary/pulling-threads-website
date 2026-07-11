@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import { Content as Store } from '../content/store.md';
+
+// Set after the Apps Script web app is deployed (Task 10)
+const FORM_ENDPOINT = import.meta.env.PUBLIC_STORE_ENDPOINT ?? '';
+---
+<Base
+  title="Store — Pulling Threads"
+  description="Pulling Threads merch is coming. Leave your email and get first dibs when it drops."
+>
+  <section class="store" style="min-height:70vh; display:flex; align-items:center;">
+    <div class="wrap" style="width:100%">
+      <span class="tag tag-line">Coming soon</span>
+      <h2>Merch is coming</h2>
+      <div class="store-copy"><Store /></div>
+      <form class="store-form" method="post" data-endpoint={FORM_ENDPOINT}>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true" />
+        <input type="email" name="email" placeholder="your@email.com" aria-label="Email address" required />
+        <button class="btn btn-accent" type="submit">Get first dibs</button>
+      </form>
+      <p id="store-err" class="store-fine" role="alert"></p>
+      <p class="store-fine">One email when it drops. That's it.</p>
+    </div>
+  </section>
+
+  <script>
+    const form = document.querySelector<HTMLFormElement>('.store-form')!;
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button')!;
+      const err = document.getElementById('store-err')!;
+      err.textContent = '';
+      if (!form.dataset.endpoint) {
+        err.textContent = "The list isn't open yet — DM us on Instagram instead.";
+        return;
+      }
+      try {
+        btn.disabled = true;
+        btn.textContent = 'Sending…';
+        await fetch(form.dataset.endpoint, { method: 'POST', body: new FormData(form) });
+        form.outerHTML = '<p class="store-fine" role="status">Done. You\'ll hear from us when it drops.</p>';
+      } catch {
+        btn.disabled = false;
+        btn.textContent = 'Get first dibs';
+        err.textContent = "That didn't work — try again or DM us on Instagram.";
+      }
+    });
+  </script>
+</Base>
