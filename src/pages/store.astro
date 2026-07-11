@@ -38,7 +38,9 @@ const FORM_ENDPOINT = import.meta.env.PUBLIC_STORE_ENDPOINT ?? '';
       try {
         btn.disabled = true;
         btn.textContent = 'Sending…';
-        await fetch(form.dataset.endpoint, { method: 'POST', body: new FormData(form) });
+        // Apps Script responses aren't CORS-readable; opaque success is fine —
+        // the write lands server-side and spam is filtered there too.
+        await fetch(form.dataset.endpoint, { method: 'POST', body: new FormData(form), mode: 'no-cors' });
         form.outerHTML = '<p class="store-fine" role="status">Done. You\'ll hear from us when it drops.</p>';
       } catch {
         btn.disabled = false;
