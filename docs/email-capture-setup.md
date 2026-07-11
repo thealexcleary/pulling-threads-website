@@ -1,6 +1,9 @@
 # Store email capture — one-time setup (Alex, ~3 minutes)
 
-The site's store form posts to a tiny Google Apps Script. On first run the script **creates its own Google Sheet** ("Pulling Threads — Merch list") in the Drive of whoever runs it — so do all of this logged in as **alex@alexcleary.com** and the sheet lands on the right account, formatted, automatically.
+The site's store form posts to a tiny Google Apps Script that appends rows to the Google Sheet **"Pulling Threads — Merch list"**, already created and formatted in alex@alexcleary.com's Drive:
+https://docs.google.com/spreadsheets/d/1yMZrN3Q5LouYh8VR9RlhoN7NSG9VIL8j369yjU578TM/edit
+
+Do all of this logged in as **alex@alexcleary.com**.
 
 Spam protection is built in: honeypot check, email validation, a cap of 30 signups per hour, and a 24-hour duplicate-email block. Nothing sensitive appears in the website code — the sheet ID lives only inside the script's private storage.
 
@@ -10,30 +13,16 @@ Spam protection is built in: honeypot check, email validation, a cap of 30 signu
 2. Delete the placeholder code and paste ALL of this:
 
 ```js
+const SHEET_ID = '1yMZrN3Q5LouYh8VR9RlhoN7NSG9VIL8j369yjU578TM';
 const HOURLY_CAP = 30;
 
 function getSheet_() {
-  const props = PropertiesService.getScriptProperties();
-  const id = props.getProperty('SHEET_ID');
-  if (id) return SpreadsheetApp.openById(id).getSheets()[0];
-
-  const ss = SpreadsheetApp.create('Pulling Threads — Merch list');
-  props.setProperty('SHEET_ID', ss.getId());
-  const sh = ss.getSheets()[0];
-  sh.setName('Signups');
-  sh.getRange('A1:B1').setValues([['Signed up', 'Email']])
-    .setFontWeight('bold').setBackground('#000000').setFontColor('#ffffff');
-  sh.setFrozenRows(1);
-  sh.setColumnWidth(1, 190);
-  sh.setColumnWidth(2, 300);
-  sh.getRange('A:A').setNumberFormat('ddd d mmm yyyy, h:mm am/pm');
-  return sh;
+  return SpreadsheetApp.openById(SHEET_ID).getSheetByName('Signups');
 }
 
-// Run this once from the toolbar to create the sheet and approve permissions.
+// Run this once from the toolbar to approve permissions.
 function setup() {
-  const sh = getSheet_();
-  Logger.log('Sheet ready: ' + sh.getParent().getUrl());
+  Logger.log('Sheet ready: ' + getSheet_().getParent().getUrl());
 }
 
 function doPost(e) {
@@ -64,7 +53,7 @@ function doPost(e) {
 }
 ```
 
-3. In the toolbar, select the function **setup** in the dropdown and press **Run**. Approve the permissions prompt. Check the log (View → Logs) — it prints the URL of your new, formatted sheet.
+3. In the toolbar, select the function **setup** in the dropdown and press **Run**. Approve the permissions prompt (it only asks for Sheets access).
 4. Click **Deploy** (top right) → **New deployment** → gear icon → **Web app**.
    - Description: `pt store signups`
    - Execute as: **Me**
@@ -79,10 +68,10 @@ gh workflow run deploy.yml --repo thealexcleary/pulling-threads-website
 
 Done. The store form goes live on the next deploy. Until then it politely tells people the list isn't open yet.
 
-Housekeeping: an earlier draft created a blank sheet named "Pulling Threads — Merch list" on the outlook account — bin it, it's not connected to anything.
+Housekeeping: an earlier blank sheet with the same name exists on the outlook account — bin it, it's not connected to anything.
 
 ## Why this design
 
 - The website is 100% static — there is no server to hack and no database to leak.
 - The `/exec` URL is public by design; the only thing it can do is append `(timestamp, email)` to the sheet, capped at 30 rows/hour.
-- The sheet is created by and owned by alex@alexcleary.com; its ID never appears in the website source or built pages (CI scans the output for anything secret-looking on every deploy).
+- The sheet is owned by alex@alexcleary.com; its ID lives only in the script, never in the website source or built pages (CI scans the output for anything secret-looking on every deploy).
