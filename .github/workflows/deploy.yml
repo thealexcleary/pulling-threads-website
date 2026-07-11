@@ -29,6 +29,8 @@ jobs:
       - run: npm test
       - run: npm run fetch-episodes
       - run: npm run build
+        env:
+          PUBLIC_STORE_ENDPOINT: ${{ vars.STORE_ENDPOINT }}
       - name: Audit built output for leaked secrets
         run: |
           ! grep -rEl "(api[_-]?key|BEGIN [A-Z]+ PRIVATE KEY|gho_[A-Za-z0-9]{20,}|AIza[0-9A-Za-z_-]{30,})" dist/ || (echo "possible secret in dist/" && exit 1)
