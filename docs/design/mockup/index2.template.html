@@ -1,0 +1,288 @@
+<title>Pulling Threads — Site Design Mockup</title>
+<style>
+@font-face { font-family:'Anton'; src:url({{ANTON}}) format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:'Barlow'; src:url({{BARLOW400}}) format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:'Barlow'; src:url({{BARLOW600}}) format('woff2'); font-weight:600; font-style:normal; font-display:swap; }
+@font-face { font-family:'Barlow'; src:url({{BARLOW700}}) format('woff2'); font-weight:700; font-style:normal; font-display:swap; }
+
+:root {
+  --bg:#000000; --surface:#111111;
+  --text:#FFFFFF; --text-2:#A6A6A6; --text-3:#6E6E6E;
+  --border:#262626; --border-strong:#3A3A3A;
+  --accent:#E53E3E; --accent-hover:#C53030; --accent-deep:#63171B;
+  --heading:'Anton','Arial Black',sans-serif;
+  --body:'Barlow','DM Sans',sans-serif;
+  --radius-sm:4px; --radius:8px; --radius-lg:12px;
+  color-scheme: dark;
+}
+html { background:var(--bg); }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font-family:var(--body); font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+body::after { content:""; position:fixed; inset:0; background:url({{NOISE}}); background-size:128px; opacity:.055; pointer-events:none; z-index:2000; mix-blend-mode:overlay; }
+img { max-width:100%; display:block; }
+a { color:inherit; text-decoration:none; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline:2px solid var(--accent); outline-offset:3px; border-radius:2px; }
+.wrap { max-width:1160px; margin:0 auto; padding:0 24px; }
+
+/* ---------- nav ---------- */
+.nav { position:absolute; top:0; left:0; right:0; z-index:50; }
+.nav-inner { display:flex; align-items:center; justify-content:space-between; gap:24px; padding-top:20px; }
+.nav-logo img { height:64px; width:64px; }
+.nav-links { display:flex; align-items:center; gap:30px; }
+.nav-links a { font:600 13px/1.2 var(--body); letter-spacing:.08em; text-transform:uppercase; color:var(--text-2); transition:color .15s; }
+.nav-links a:hover { color:var(--text); }
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:10px; font:600 14px/1.2 var(--body); letter-spacing:.05em; text-transform:uppercase; border-radius:var(--radius); padding:13px 26px; border:1px solid transparent; cursor:pointer; transition:background .15s,color .15s,border-color .15s,transform .15s; }
+.btn-accent { background:var(--accent); color:#fff; }
+.btn-accent:hover { background:var(--accent-hover); }
+.btn-primary { background:var(--text); color:#000; }
+.btn-primary:hover { background:#E5E5E5; }
+.btn-ghost { background:rgba(0,0,0,.35); color:var(--text); border-color:rgba(255,255,255,.35); backdrop-filter:blur(4px); }
+.btn-ghost:hover { background:rgba(255,255,255,.12); }
+.btn-sm { padding:9px 18px; font-size:12px; }
+
+/* ---------- hero ---------- */
+.hero { position:relative; min-height:min(88vh,820px); display:flex; align-items:center; overflow:hidden; }
+.hero-bg { position:absolute; inset:0; background:url({{HERO}}) center bottom / cover no-repeat #000; }
+.hero-bg::before { content:""; position:absolute; inset:0;
+  background:
+    radial-gradient(80% 95% at 50% 40%, rgba(0,0,0,.12) 0%, rgba(0,0,0,.4) 70%, rgba(0,0,0,.8) 100%),
+    linear-gradient(180deg, rgba(0,0,0,.5) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,.12) 75%, #000 100%);
+}
+.hero-content { position:relative; z-index:2; padding:120px 0 160px; width:100%; text-align:center; }
+.hero h1 { font:400 clamp(56px,10.5vw,148px)/1 var(--heading); letter-spacing:.02em; text-transform:uppercase; margin:0; text-shadow:0 4px 40px rgba(0,0,0,.85); }
+.hero-sub { font:400 17px/1.6 var(--body); color:#C9C9C9; max-width:52ch; margin:18px auto 30px; text-shadow:0 2px 16px rgba(0,0,0,.95); }
+.hero-sub strong { color:var(--text); font-weight:600; }
+.hero-ctas { display:flex; gap:14px; flex-wrap:wrap; justify-content:center; }
+.hero-fade { animation:rise .7s cubic-bezier(.2,.7,.3,1) both; }
+.hero-fade.d1 { animation-delay:.08s; } .hero-fade.d2 { animation-delay:.16s; } .hero-fade.d3 { animation-delay:.24s; }
+@keyframes rise { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:none; } }
+@media (prefers-reduced-motion:reduce){ .hero-fade { animation:none; } }
+
+/* ---------- ticker ---------- */
+.ticker { border-top:1px solid var(--border); border-bottom:1px solid var(--border); background:#070707; overflow:hidden; padding:14px 0; }
+.ticker-track { display:flex; gap:56px; white-space:nowrap; animation:tick 30s linear infinite; width:max-content; }
+@keyframes tick { to { transform:translateX(-50%); } }
+@media (prefers-reduced-motion:reduce){ .ticker-track { animation:none; } }
+.ticker span { font:400 15px/1 var(--heading); letter-spacing:.14em; text-transform:uppercase; color:var(--text-3); }
+.ticker span b { color:var(--accent); font-weight:400; }
+
+/* ---------- latest ---------- */
+.latest-sec { padding:96px 0; background:radial-gradient(90% 120% at 50% 0%, #101010 0%, #000 70%); }
+.latest { display:grid; gap:40px; align-items:center; }
+@media (min-width:900px){ .latest { grid-template-columns:1.15fr 1fr; } }
+.vid { position:relative; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border-strong); box-shadow:0 24px 60px rgba(0,0,0,.6); }
+.vid img { width:100%; aspect-ratio:16/9; object-fit:cover; }
+.vid .play { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,.12); transition:background .2s; }
+.vid:hover .play { background:rgba(0,0,0,.3); }
+.play-btn { width:78px; height:78px; border-radius:50%; background:var(--accent); display:flex; align-items:center; justify-content:center; box-shadow:0 8px 30px rgba(229,62,62,.4); }
+.play-btn svg { margin-left:5px; }
+.tag { display:inline-block; font:700 11px/1.2 var(--body); letter-spacing:.1em; text-transform:uppercase; padding:5px 12px; border-radius:var(--radius-sm); }
+.tag-red { color:#fff; background:var(--accent); }
+.tag-line { color:var(--text-2); border:1px solid var(--border-strong); }
+.latest-copy h2 { font:400 clamp(30px,3.8vw,44px)/1.06 var(--heading); letter-spacing:.015em; text-transform:uppercase; margin:16px 0 12px; text-wrap:balance; }
+.meta { font:500 13px/1.4 var(--body); color:var(--text-3); display:flex; gap:18px; margin-bottom:18px; }
+.latest-copy p { color:var(--text-2); margin:0 0 26px; max-width:56ch; }
+.latest-actions { display:flex; gap:12px; flex-wrap:wrap; }
+
+/* ---------- episodes ---------- */
+.eps { padding:96px 0; background:#000; }
+.sec-head { display:flex; align-items:baseline; justify-content:space-between; gap:24px; margin-bottom:12px; }
+.sec-head h2 { font:400 clamp(34px,4.6vw,54px)/1.04 var(--heading); letter-spacing:.02em; text-transform:uppercase; margin:0; }
+.sec-head h2 em { font-style:normal; color:var(--accent); }
+.sec-sub { color:var(--text-3); margin:0 0 32px; font-size:15px; }
+.ep-tools { display:flex; gap:12px; margin-bottom:32px; flex-wrap:wrap; }
+.search { flex:1; min-width:260px; display:flex; align-items:center; gap:10px; background:#0C0C0C; border:1px solid var(--border-strong); border-radius:var(--radius); padding:13px 16px; color:var(--text-3); }
+.search input { background:none; border:0; color:var(--text); font:400 15px var(--body); width:100%; }
+.search input::placeholder { color:var(--text-3); }
+.search input:focus { outline:none; }
+.ep-grid { display:grid; gap:28px 20px; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); }
+.ep-card { display:flex; flex-direction:column; gap:12px; }
+.ep-thumb { position:relative; border-radius:var(--radius); overflow:hidden; border:1px solid var(--border); }
+.ep-thumb img { width:100%; aspect-ratio:16/9; object-fit:cover; transition:transform .3s; }
+.ep-card:hover .ep-thumb img { transform:scale(1.04); }
+.ep-info { display:flex; flex-direction:column; gap:4px; }
+.ep-top { display:flex; gap:12px; font:700 11px/1.2 var(--body); letter-spacing:.08em; text-transform:uppercase; }
+.ep-num { color:var(--accent); }
+.ep-date { color:var(--text-3); font-weight:500; }
+.ep-card h4 { font:700 16px/1.3 var(--body); letter-spacing:.02em; margin:0; }
+.ep-card:hover h4 { text-decoration:underline; text-underline-offset:3px; }
+.eps-more { display:flex; justify-content:center; margin-top:44px; }
+
+/* ---------- about ---------- */
+.about-sec { padding:110px 0; background:radial-gradient(70% 90% at 30% 20%, #151210 0%, #000 68%); border-top:1px solid var(--border); }
+.about { display:grid; gap:56px; align-items:center; }
+@media (min-width:920px){ .about { grid-template-columns:1fr 1fr; } }
+.duo { position:relative; display:grid; grid-template-columns:1fr 1fr; gap:0; align-items:end; }
+.duo figure { margin:0; position:relative; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border-strong); box-shadow:0 20px 50px rgba(0,0,0,.55); }
+.duo figure:first-child { transform:rotate(-2.5deg) translateX(6px); z-index:1; }
+.duo figure:last-child { transform:rotate(2deg) translateY(26px) translateX(-6px); }
+.duo img { width:100%; aspect-ratio:4/5; object-fit:cover; }
+.duo figcaption { position:absolute; left:0; right:0; bottom:0; padding:40px 16px 12px; background:linear-gradient(180deg,transparent,rgba(0,0,0,.9)); font:400 22px/1.1 var(--heading); letter-spacing:.05em; text-transform:uppercase; }
+.about-copy h2 { font:400 clamp(38px,5vw,60px)/1.02 var(--heading); letter-spacing:.015em; text-transform:uppercase; margin:0 0 22px; text-wrap:balance; }
+.about-copy h2 .accent { color:var(--accent); }
+.about-copy p { color:var(--text-2); margin:0 0 18px; max-width:54ch; }
+.about-copy p strong { color:var(--text); font-weight:600; }
+
+/* ---------- store ---------- */
+.store { position:relative; text-align:center; padding:130px 0; background:radial-gradient(60% 80% at 50% 100%, rgba(99,23,27,.5) 0%, rgba(0,0,0,0) 70%), #050505; border-top:1px solid var(--border); }
+.store h2 { font:400 clamp(46px,8vw,104px)/1 var(--heading); letter-spacing:.02em; text-transform:uppercase; margin:20px 0 16px; }
+.store p { color:var(--text-2); max-width:44ch; margin:0 auto; }
+.store-form { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin:30px auto 0; max-width:460px; }
+.store-form input { flex:1; min-width:220px; background:#0C0C0C; border:1px solid var(--border-strong); border-radius:var(--radius); padding:13px 16px; color:var(--text); font:400 15px var(--body); }
+.store-form input::placeholder { color:var(--text-3); }
+.store-fine { font:500 12px/1.4 var(--body); color:var(--text-3); margin-top:14px; }
+
+/* ---------- footer ---------- */
+footer { padding:72px 0 40px; border-top:1px solid var(--border); background:#000; }
+.foot-grid { display:flex; flex-wrap:wrap; gap:48px; justify-content:space-between; align-items:flex-start; margin-bottom:56px; }
+.foot-logo img { height:88px; width:88px; margin-bottom:18px; }
+.foot-tag { font:400 14px/1.5 var(--body); color:var(--text-3); max-width:30ch; }
+.foot-col h5 { font:600 12px/1.2 var(--body); letter-spacing:.1em; text-transform:uppercase; color:var(--text-3); margin:0 0 14px; }
+.foot-col a { display:block; font:400 15px/2.1 var(--body); color:var(--text-2); transition:color .15s; }
+.foot-col a:hover { color:var(--text); }
+.foot-base { display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; border-top:1px solid var(--border); padding-top:24px; font:500 12px var(--body); color:var(--text-3); }
+
+/* ---------- mobile ---------- */
+@media (max-width:760px) {
+  .nav-inner { padding-top:14px; }
+  .nav-logo img { height:48px; width:48px; }
+  .nav-links { gap:16px; }
+  .nav-links a:not(.btn) { display:none; }
+  .hero { min-height:calc(100svh - 47px); }
+  .hero-bg { background-position:68% bottom; }
+  .hero-content { padding:100px 0 48px; }
+  .hero-sub { font-size:16px; }
+  .hero-ctas .btn { width:100%; }
+  section { padding:64px 0; }
+  .latest-sec, .about-sec { padding:64px 0; }
+  .store { padding:88px 0; }
+  .duo { max-width:340px; margin:0 auto; }
+  .foot-grid { gap:32px; }
+}
+</style>
+
+<header class="hero" id="top">
+  <div class="hero-bg" role="img" aria-label="The Pulling Threads studio — two microphones facing each other"></div>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="nav-logo" href="#top" aria-label="Pulling Threads home"><img src="{{BADGE}}" alt="Pulling Threads"></a>
+      <div class="nav-links">
+        <a href="#episodes">Episodes</a>
+        <a href="#about">About</a>
+        <a href="#store">Store</a>
+        <a class="btn btn-ghost btn-sm" href="https://open.spotify.com/show/1et4gYjb2968Hfcfm0TQdW">Listen on Spotify</a>
+      </div>
+    </div>
+  </nav>
+  <div class="wrap hero-content">
+    <h1 class="hero-fade d1">Pulling Threads</h1>
+    <p class="hero-sub hero-fade d2">Alex and Troy Cleary on life, training, money, mates and modern manhood — <strong>no guru bullshit</strong>.</p>
+    <div class="hero-ctas hero-fade d3">
+      <a class="btn btn-primary" href="https://open.spotify.com/show/1et4gYjb2968Hfcfm0TQdW">Listen on Spotify</a>
+      <a class="btn btn-ghost" href="#episodes">Browse all 83 episodes</a>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>New episode every week</span><span><b>83</b> episodes and counting</span><span>Mostly talking shit</span><span>Occasionally to great people</span><span>Dog act of the week</span><span>Harry of the week</span>
+    <span>New episode every week</span><span><b>83</b> episodes and counting</span><span>Mostly talking shit</span><span>Occasionally to great people</span><span>Dog act of the week</span><span>Harry of the week</span>
+  </div>
+</div>
+
+<section class="latest-sec" id="latest">
+  <div class="wrap latest">
+    <a class="vid" href="#" aria-label="Play episode 83">
+      <img src="{{THUMBLATEST}}" alt="DIY Ruined My Week — episode 83 thumbnail">
+      <span class="play"><span class="play-btn"><svg width="26" height="30" viewBox="0 0 26 30" fill="#fff" aria-hidden="true"><path d="M0 0 L26 15 L0 30 Z"/></svg></span></span>
+    </a>
+    <div class="latest-copy">
+      <span class="tag tag-red">Latest — Episode 83</span>
+      <h2>The Renovation That Broke Me</h2>
+      <div class="meta"><span>6 July 2026</span><span>1 hr 38 min</span></div>
+      <p>Alex spent an entire week off work trying to build a deck. What he found underground nearly sent him over the edge. Buried rocks the size of a coffin, mystery pipes, failed inspections, and a $1,200 hole-digging bill with almost nothing to show for it.</p>
+      <div class="latest-actions">
+        <a class="btn btn-primary btn-sm" href="#">Play episode</a>
+        <a class="btn btn-ghost btn-sm" href="#">Read show notes</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="eps" id="episodes">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Every <em>episode</em></h2>
+    </div>
+    <p class="sec-sub">All 83 of them. Search for the one your mate wouldn't shut up about.</p>
+    <div class="ep-tools">
+      <label class="search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5.5" stroke="#6E6E6E"/><path d="M11 11 L15 15" stroke="#6E6E6E" stroke-linecap="round"/></svg><input type="search" placeholder="Search episodes &mdash; try &quot;deck&quot;, &quot;ultra&quot; or &quot;Tim&quot;" aria-label="Search episodes"></label>
+    </div>
+    <div class="ep-grid">
+      {{EPCARDS}}
+    </div>
+    <div class="eps-more"><a class="btn btn-ghost" href="#">View all 83 episodes</a></div>
+  </div>
+</section>
+
+<section class="about-sec" id="about">
+  <div class="wrap about">
+    <div class="duo">
+      <figure><img src="{{PORTA}}" alt="Alex Cleary"><figcaption>Alex</figcaption></figure>
+      <figure><img src="{{PORTT}}" alt="Troy Cleary"><figcaption>Troy</figcaption></figure>
+    </div>
+    <div class="about-copy">
+      <h2>Two brothers <span class="accent">from Mount Isa</span></h2>
+      <p><strong>Alex</strong> is an electrician who works in underground mines in Africa, went from booze and chaos to 100km runs and cold showers, and once ran a marathon in Antarctica for the Black Dog Institute in memory of their sister.</p>
+      <p><strong>Troy</strong> is the reason the show is listenable. He's the one getting talked into ultramarathons against his better judgement, and he just beat Alex by 20 minutes in his first 50K. Alex would like that struck from the record.</p>
+      <p>Every week they sit down and pull at whatever thread life handed them &mdash; and follow it wherever it goes.</p>
+      <a class="btn btn-ghost" href="#" style="margin-top:10px">Read the full story</a>
+    </div>
+  </div>
+</section>
+
+<section class="store" id="store">
+  <div class="wrap">
+    <span class="tag tag-line">Coming soon</span>
+    <h2>Merch is coming</h2>
+    <p>No products yet. We're working on it. Or at least talking about working on it, which is basically the same thing.</p>
+    <form class="store-form" action="#" method="post">
+      <input type="email" name="email" placeholder="your@email.com" aria-label="Email address" required>
+      <button class="btn btn-accent" type="submit">Get first dibs</button>
+    </form>
+    <p class="store-fine">One email when it drops. That's it.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-logo">
+        <img src="{{BADGE}}" alt="Pulling Threads">
+        <p class="foot-tag">Mostly talking shit, occasionally to great people...</p>
+      </div>
+      <div class="foot-col">
+        <h5>Listen</h5>
+        <a href="https://open.spotify.com/show/1et4gYjb2968Hfcfm0TQdW">Spotify</a>
+        <a href="#">Apple Podcasts</a>
+        <a href="#">RSS feed</a>
+      </div>
+      <div class="foot-col">
+        <h5>Follow</h5>
+        <a href="https://instagram.com/pullingthreads">Instagram &mdash; @pullingthreads</a>
+        <a href="https://instagram.com/thealexcleary">Alex &mdash; @thealexcleary</a>
+      </div>
+      <div class="foot-col">
+        <h5>Site</h5>
+        <a href="#episodes">Episodes</a>
+        <a href="#about">About</a>
+        <a href="#store">Store</a>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>&copy; 2026 Pulling Threads</span>
+      <span>pullingthreads.com.au</span>
+    </div>
+  </div>
+</footer>
